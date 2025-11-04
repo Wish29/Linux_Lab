@@ -1,6 +1,6 @@
 ## Experiment [1]: Install WSL, virtualbox, create virtual machine with linux os like ubuntu, linuxmint, or debian
 
-### Name: Biswabandya Mohanty Roll no.: 590029274 Date: 2025-09-29
+### Name: Biswabandya Mohanty  Roll No.: 590029274   Date: 2025-11-1
 
 ### AIM:
 * [To install wsl, create virtual machine with linux distros like ubuntu, debian, etc]
@@ -15,6 +15,7 @@
 
 * WSL enables running Linux distributions directly on Windows without a virtual machine. VirtualBox is a virtualization software that allows creating and running multiple operating systems on a single machine. Creating a VM with Linux OS (Ubuntu, Mint, Debian) helps understand OS installation steps and provides a sandbox environment for Linux practice.
 
+
 ## Procedure & Observations
 
 # Part 1: Installing and Enabling WSL (Ubuntu) on Windows
@@ -23,29 +24,18 @@
 
 * `**Open Powershell as administrator**`: Press `win+x` and select `"Windows Powershell (Admin)"` or `"Terminal (Admin)"`.
 
-<p align="center">
-<img align="center" src="/.img/win+x.png" width="900">
-</p>
 
 * Run the WSL Installation Command:
 ```
 wsl -l -o
 ```
-<p align="center">
-<img align="center" src="/.img/wsl-install.png" width="900">
-</p>
-
 ```
 wsl --install Ubuntu
 ```
-<p align="center">
-<img align="center" src="/.img/wsl-ubuntu-install.png" width="900">
-</p>
+ 
 
 * Once the wsl distro is installed it'll show up like this
-<p align="center">
-<img align="center" src="/.img/wsl-ubuntu-done.png" width="900">
-</p>
+ 
 
 * Once done with the installation reboot your system when prompted.
 
@@ -60,9 +50,7 @@ wsl --install Ubuntu
 
 * Wait for the isntallation to finish. You will be asked to create a `New UNIX username` and **password**. This is separate from your windows login.
 
-<p>
-<img align="center" src="/.img/ubuntu-install.gif" widt="900">
-</p>
+ 
 
 ## Step 3: Enable Virtualization in BIOS/UEFI
 
@@ -70,10 +58,7 @@ wsl --install Ubuntu
     * Press `ctrl + shift + esc` to open Task Manager.
     * Go to the "Performance" Tab.
     * Look at the bottom right. "Virtualization" should say **Enabled**.
-    <p  align="center">
-    <img align="center" src="/.img/virtualization.gif" width="900">
-    <img align="center" src="/.img/virtualization.png" width="900">
-    </p>
+     
 
 2. If it's Disabled:
     * Reboot your computer and enter the BIOS/UEFI setup. The key to boot is usually `Delete`, `F2`, `F10`, `F12`, or `Esc`.
